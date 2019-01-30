@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - "lts/*"
+jobs:
+  include:
+    - stage: test and build
+      script: yarn ci
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN 
+  keep-history: false
+  local-dir: build
+  email: no@email.com
+  name: Travis
+  on:
+    branch: master
