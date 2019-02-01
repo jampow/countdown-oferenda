@@ -25,8 +25,6 @@ class Countdown extends React.Component {
     const now = new Date().getTime()
     const dist = target.getTime() - now
 
-    console.log(S, M, H, D)
-
     this.setState({
       days:    Math.floor(dist / D),
       hours:   Math.floor((dist % D) / H),
