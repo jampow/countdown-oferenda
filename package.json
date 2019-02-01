@@ -2,6 +2,7 @@
   "name": "countdown-fabi-hangover",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jampow.github.io/countdown-fabi-hangover",
   "dependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
