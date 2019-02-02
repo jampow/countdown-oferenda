@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import Countdown from './countdown'
+import Countdown from './Countdown'
+import BeerBackground from './BeerBackground'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <BeerBackground>
         <Countdown target={new Date('Jan 1, 2020 00:00:00')}>
           {({days, hours, minutes, seconds}) => (
             <div>
@@ -12,7 +13,7 @@ class App extends Component {
             </div>
           )}
         </Countdown>
-      </div>
+      </BeerBackground>
     );
   }
 }
