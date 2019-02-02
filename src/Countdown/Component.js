@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 
 class Countdown extends React.Component {
   state = {
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0
+    days: '0',
+    hours: '00',
+    minutes: '00',
+    seconds: '00'
   }
 
   S = 1000
@@ -18,6 +18,8 @@ class Countdown extends React.Component {
     this.timer = setInterval(this.updateCounter, 1000)
   }
 
+  padZero = n => (n + '').padStart(2, '0')
+
   updateCounter = () => {
     const { S, M, H, D } = this
     const { target } = this.props
@@ -26,10 +28,10 @@ class Countdown extends React.Component {
     const dist = target.getTime() - now
 
     this.setState({
-      days:    Math.floor(dist / D),
-      hours:   Math.floor((dist % D) / H),
-      minutes: Math.floor((dist % H) / M),
-      seconds: Math.floor((dist % M) / S)
+      days:    Math.floor(dist / D) + '',
+      hours:   this.padZero( Math.floor((dist % D) / H) ),
+      minutes: this.padZero( Math.floor((dist % H) / M) ),
+      seconds: this.padZero( Math.floor((dist % M) / S) )
     })
   }
 
