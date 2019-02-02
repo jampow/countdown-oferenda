@@ -35,14 +35,8 @@ class Countdown extends React.Component {
 
   render () {
     const { days, hours, minutes, seconds } = this.state
-    return (
-      <div>
-        <div>{days} dias</div>
-        <div>{hours} horas</div>
-        <div>{minutes} minutos</div>
-        <div>{seconds} segundos</div>
-      </div>
-    )
+    const { children } = this.props
+    return children({days, hours, minutes, seconds})
   }
 }
 
