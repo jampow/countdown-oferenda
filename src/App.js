@@ -44,7 +44,7 @@ class App extends Component {
             </Fragment>
           )}
         </Countdown>
-        <To> Para o próximo porre da Fabi </To>
+        <To> Para a Fabi ativar o modo Fábio Assução </To>
         <ShareWrapper>
           <Share />
         </ShareWrapper>
