@@ -5,7 +5,7 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 const Button = ({ className, text, url }) => {
   return (
-    <a className={className} href={`whatsapp://send?text=${text} ${url}`}>
+    <a className={className} href={`whatsapp://send?text=${text}`}>
       <FontAwesomeIcon icon={faWhatsapp} />
     </a>
   )
