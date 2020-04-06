@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "5f497ba27e3d82d52f4b",
-    "url": "/countdown-oferenda/static/js/main.5f497ba2.chunk.js"
+    "revision": "dd02102a2e572732deb2",
+    "url": "/countdown-oferenda/static/js/main.dd02102a.chunk.js"
   },
   {
     "revision": "9db3ed95da66445b4996",
@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/countdown-oferenda/static/js/runtime~main.3d18e9f1.js"
   },
   {
-    "revision": "781532ac33e7f2a1fb886d77e6537641",
+    "revision": "35576d5847f7ccd59d095ec52624a14d",
     "url": "/countdown-oferenda/index.html"
   }
 ];
