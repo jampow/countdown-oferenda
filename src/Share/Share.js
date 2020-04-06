@@ -5,7 +5,7 @@ import TelegramButton from './TelegramButton'
 
 const Share = ({ className }) => {
   const url = window.location.href
-  const msg = `Calma, 2020 já está chegando... ${url}`
+  const msg = `Quanto tempo falta para mijarmos em tudo? ${url}`
 
   return (
     <Fragment>
