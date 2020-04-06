@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components'
 import Countdown from './Countdown'
 import BeerBackground from './BeerBackground'
@@ -35,16 +35,18 @@ class App extends Component {
   render() {
     return (
       <BeerBackground>
-        <Rest>Faltam:</Rest>
-        <Countdown target={new Date('Jan 1, 2020 00:00:00')}>
-          {({days, hours, minutes, seconds}) => (
-            <Fragment>
+        <Countdown target={new Date('Apr 20, 2020 00:00:00')}>
+          {({days, hours, minutes, seconds, finished}) => finished ? (
+            <Rest>Hora de mijar em tudo</Rest>
+          ) : (
+            <>
+              <Rest>Faltam:</Rest>
               <Days> {days} dias </Days>
               <Time> {`${hours}:${minutes}:${seconds}`} </Time>
-            </Fragment>
+            </>
           )}
         </Countdown>
-        <To> Para a Fabi ativar o modo Fábio Assunção </To>
+        <To> Para a Oferenda ser despachada </To>
         <ShareWrapper>
           <Share />
         </ShareWrapper>

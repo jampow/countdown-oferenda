@@ -6,7 +6,8 @@ class Countdown extends React.Component {
     days: '0',
     hours: '00',
     minutes: '00',
-    seconds: '00'
+    seconds: '00',
+    finished: false
   }
 
   S = 1000
@@ -25,20 +26,22 @@ class Countdown extends React.Component {
     const { target } = this.props
 
     const now = new Date().getTime()
-    const dist = target.getTime() - now
+    const targetTime = target.getTime()
+    const dist = targetTime - now
 
     this.setState({
       days:    Math.floor(dist / D) + '',
       hours:   this.padZero( Math.floor((dist % D) / H) ),
       minutes: this.padZero( Math.floor((dist % H) / M) ),
-      seconds: this.padZero( Math.floor((dist % M) / S) )
+      seconds: this.padZero( Math.floor((dist % M) / S) ),
+      finished: targetTime < now
     })
   }
 
   render () {
-    const { days, hours, minutes, seconds } = this.state
+    const { days, hours, minutes, seconds, finished } = this.state
     const { children } = this.props
-    return children({days, hours, minutes, seconds})
+    return children({days, hours, minutes, seconds, finished})
   }
 }
 

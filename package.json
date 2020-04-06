@@ -1,8 +1,8 @@
 {
-  "name": "countdown-fabi-hangover",
+  "name": "countdown-oferenda",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jampow.github.io/countdown-fabi-hangover",
+  "homepage": "https://jampow.github.io/countdown-oferenda",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.14",
     "@fortawesome/free-brands-svg-icons": "^5.7.1",

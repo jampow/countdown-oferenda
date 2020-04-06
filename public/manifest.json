@@ -1,9 +1,9 @@
 {
-  "short_name": "Próximo porre",
-  "name": "Calculando tempo de sobriedade restante...",
+  "short_name": "Oferenda",
+  "name": "Despacho da oferenda",
   "icons": [
     {
-      "src": "assets/beer.ico",
+      "src": "assets/chicken.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
